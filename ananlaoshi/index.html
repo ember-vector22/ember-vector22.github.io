@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>安安老师在线观看-课程回放与直播观看指南</title>
+<meta name="description" content="安安老师在线观看入口整理：课程直播回放、录播课表、配套讲义与常见观看问题。按年级与科目查找到对应场次的开始时间、平台和回看期限，避免错过关键讲解。">
+<meta name="keywords" content="安安老师在线观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5d50'/%3E%3Cpath d='M18 22h28v6H18zM18 34h20v6H18z' fill='%23f4e6c8'/%3E%3Ccircle cx='46' cy='40' r='9' fill='%23e0a543'/%3E%3Cpath d='M43 36v8l7-4z' fill='%232f5d50'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1f2a26;
+  --ink-soft:#41524b;
+  --muted:#6b7a73;
+  --paper:#f7f5ef;
+  --card:#ffffff;
+  --line:#dcd8cc;
+  --brand:#2f5d50;
+  --brand-deep:#1e4038;
+  --brand-soft:#e4ede8;
+  --accent:#c47a1d;
+  --accent-soft:#fbf0dd;
+  --warn:#8a3d2c;
+  --radius-s:6px;
+  --radius-m:10px;
+  --radius-l:16px;
+  --shadow-s:0 1px 2px rgba(31,42,38,.08);
+  --shadow-m:0 6px 18px rgba(31,42,38,.09);
+  --sp-1:6px;--sp-2:12px;--sp-3:18px;--sp-4:26px;--sp-5:38px;--sp-6:56px;
+  --fs-xs:12.5px;--fs-s:14px;--fs-m:15.5px;--fs-l:18px;--fs-xl:23px;--fs-2xl:31px;--fs-3xl:40px;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:var(--fs-m);line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-deep)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;
+}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.25em}
+section[id]{scroll-margin-top:calc(var(--sticky-h) + 16px)}
+
+/* ===== 顶部层 ===== */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--brand-deep);color:#eef4f0;font-size:var(--fs-xs);
+  display:flex;gap:14px;align-items:center;justify-content:center;
+  padding:7px 16px;flex-wrap:wrap;text-align:center;
+}
+.notice b{color:#ffd79a;font-weight:600}
+.notice a{color:#ffe9c4;text-decoration:none;border-bottom:1px dashed #a9c3b8}
+.site-head{
+  background:rgba(247,245,239,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-s);
+}
+.head-inner{
+  max-width:1180px;margin:0 auto;padding:10px 20px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:40px;height:40px;flex:0 0 auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-size:var(--fs-l);letter-spacing:.02em}
+.brand-text span{font-size:11.5px;color:var(--muted);letter-spacing:.12em}
+.head-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.head-nav a{
+  text-decoration:none;color:var(--ink-soft);font-size:var(--fs-s);
+  padding:7px 11px;border-radius:999px;
+}
+.head-nav a:hover{background:var(--brand-soft);color:var(--brand-deep)}
+.head-tools{display:flex;align-items:center;gap:8px}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:172px;padding:8px 12px;font:inherit;font-size:var(--fs-s);
+  border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);
+}
+.search-wrap input::placeholder{color:#9aa7a0}
+.search-result{
+  position:absolute;right:0;top:calc(100% + 6px);width:288px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-m);
+  box-shadow:var(--shadow-m);padding:8px;font-size:var(--fs-s);
+  max-height:280px;overflow:auto;display:none;
+}
+.search-result.on{display:block}
+.search-result a{display:block;padding:6px 8px;text-decoration:none;border-radius:var(--radius-s);color:var(--ink-soft)}
+.search-result a:hover{background:var(--brand-soft)}
+.search-result .empty{color:var(--warn);padding:8px}
+.menu-btn{
+  display:none;font:inherit;font-size:var(--fs-s);padding:8px 13px;
+  border:1px solid var(--line);background:#fff;border-radius:999px;cursor:pointer;color:var(--ink-soft);
+}
+@media (max-width:900px){
+  .menu-btn{display:inline-block}
+  .head-nav{display:none;width:100%;margin-left:0;order:5;border-top:1px solid var(--line);padding-top:8px}
+  .head-nav.open{display:flex}
+  .head-tools{margin-left:auto}
+  .search-wrap input{width:140px}
+}
+@media (max-width:560px){
+  .head-inner{gap:10px;padding:10px 14px}
+  .search-wrap input{width:112px}
+}
+
+/* ===== 首屏 ===== */
+.hero{
+  max-width:1180px;margin:0 auto;padding:var(--sp-5) 20px var(--sp-4);
+  display:grid;grid-template-columns:1.25fr .9fr;gap:var(--sp-5);align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);
+  color:var(--brand-deep);background:var(--brand-soft);border:1px solid #cddbd4;
+  padding:4px 12px;border-radius:999px;letter-spacing:.06em;
+}
+.hero h1{
+  font-family:var(--serif);font-size:var(--fs-3xl);margin:14px 0 12px;
+  letter-spacing:.01em;color:var(--brand-deep);
+}
+.hero-lead{font-size:var(--fs-l);color:var(--ink-soft);max-width:38em}
+.hero-stat{display:flex;gap:26px;flex-wrap:wrap;margin:var(--sp-3) 0 var(--sp-4)}
+.hero-stat div strong{display:block;font-size:var(--fs-xl);font-family:var(--serif);color:var(--brand)}
+.hero-stat div span{font-size:var(--fs-xs);color:var(--muted)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-size:var(--fs-s);font-weight:600;
+  padding:11px 22px;border-radius:999px;transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow-s)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-m)}
+.btn-ghost{border:1.5px solid var(--brand);color:var(--brand-deep);background:transparent}
+.btn-ghost:hover{transform:translateY(-2px);background:var(--brand-soft)}
+.hero-art{
+  position:relative;background:linear-gradient(160deg,#335f52,#1d3b33 62%,#17312b);
+  border-radius:var(--radius-l);padding:22px;color:#eaf2ee;box-shadow:var(--shadow-m);
+  min-height:328px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;
+}
+.hero-art::after{
+  content:"";position:absolute;right:-40px;bottom:-56px;width:190px;height:190px;border-radius:50%;
+  background:radial-gradient(circle,rgba(224,165,67,.42),transparent 66%);
+}
+.art-label{font-size:var(--fs-xs);letter-spacing:.16em;color:#a9c7b9}
+.art-list{list-style:none;padding:0;margin:16px 0 0;position:relative;z-index:1}
+.art-list li{
+  display:flex;justify-content:space-between;gap:10px;
+  padding:10px 0;border-bottom:1px dashed rgba(233,242,238,.22);font-size:var(--fs-s);
+}
+.art-list li:last-child{border-bottom:0}
+.art-list li span:last-child{color:#ffd79a;white-space:nowrap}
+.art-note{position:relative;z-index:1;font-size:var(--fs-xs);color:#b9cfc4;margin-top:12px}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:var(--sp-4)}
+  .hero h1{font-size:30px}
+  .hero-art{min-height:auto}
+}
+
+/* ===== 布局 ===== */
+.layout{
+  max-width:1180px;margin:0 auto;padding:0 20px var(--sp-6);
+  display:grid;grid-template-columns:minmax(0,1fr) 306px;gap:var(--sp-0,34px);
+  align-items:start;
+}
+.main-col{min-width:0}
+.side-col{position:sticky;top:calc(var(--sticky-h) + 18px);display:flex;flex-direction:column;gap:var(--sp-3)}
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr;gap:var(--sp-4)}
+  .side-col{position:static}
+}
+.panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:var(--sp-4);margin-bottom:var(--sp-4);box-shadow:var(--shadow-s);
+}
+.panel-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.panel-head h2{font-size:var(--fs-xl);font-family:var(--serif);color:var(--brand-deep)}
+.panel-head .kicker{font-size:var(--fs-xs);color:var(--muted);letter-spacing:.08em}
+.side-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3)}
+.side-panel h3{font-size:var(--fs-m);margin-bottom:var(--sp-2);color:var(--brand-deep)}
+.side-nav{list-style:none;padding:0;margin:0;font-size:var(--fs-s)}
+.side-nav a{
+  display:block;padding:7px 10px;text-decoration:none;color:var(--ink-soft);
+  border-left:3px solid transparent;border-radius:0 var(--radius-s) var(--radius-s) 0;
+}
+.side-nav a:hover{background:var(--brand-soft)}
+.side-nav a.active{border-left-color:var(--accent);background:var(--brand-soft);color:var(--brand-deep);font-weight:600}
+
+/* 通用小组件 */
+.meta-row{display:flex;gap:10px;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--muted);margin-top:6px}
+.chip{
+  display:inline-block;font-size:var(--fs-xs);padding:2px 9px;border-radius:999px;
+  background:var(--brand-soft);color:var(--brand-deep);border:1px solid #d3e0da;text-decoration:none;
+}
+.chip.warm{background:var(--accent-soft);border-color:#ecd6ae;color:#7a4a0c}
+
+/* 频道索引 */
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
+.channel-grid a{
+  display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:var(--radius-m);padding:11px 13px;background:#fdfcf8;
+  transition:transform .16s ease,border-color .16s ease;
+}
+.channel-grid a:hover{transform:translateY(-2px);border-color:var(--brand);background:#fff}
+.channel-grid strong{font-size:var(--fs-s);color:var(--brand-deep)}
+.channel-grid span{font-size:var(--fs-xs);color:var(--muted)}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.pick-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pick-grid{grid-template-columns:1fr}}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.card img{width:100%;height:146px;object-fit:cover;background:#e8e6dd}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body h3{font-size:var(--fs-m);line-height:1.45}
+.card-body p{font-size:var(--fs-s);color:var(--ink-soft);margin:0}
+.card-body .meta-row{margin-top:auto}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;padding:0;margin:0}
+.tight-list li{
+  display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.tight-list li:last-child{border-bottom:0}
+.tight-list .date{font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
+.tight-list a{text-decoration:none;color:var(--ink);font-weight:600}
+.tight-list a:hover{color:var(--brand)}
+.tight-list .note{font-size:var(--fs-xs);color:var(--muted)}
+.tight-list em{display:block;font-style:normal;font-size:var(--fs-xs);color:var(--ink-soft);margin-top:2px;font-weight:400}
+@media (max-width:560px){
+  .tight-list li{grid-template-columns:68px minmax(0,1fr)}
+  .tight-list .note{grid-column:1/-1}
+}
+
+/* 双栏正文对照 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:700px){.compare{grid-template-columns:1fr}}
+.compare-box{border:1px solid var(--line);border-radius:var(--radius-m);padding:14px 16px;background:#fdfcf8}
+.compare-box.good{border-top:4px solid var(--brand)}
+.compare-box.bad{border-top:4px solid var(--warn)}
+.compare-box h4{font-size:var(--fs-s);margin-bottom:8px;color:var(--brand-deep)}
+.compare-box.bad h4{color:var(--warn)}
+.compare-box ul{margin:0;padding-left:1.1em;font-size:var(--fs-s)}
+.compare-box li{margin-bottom:5px}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:#dfe6e1}
+.timeline li{position:relative;padding-left:30px;margin-bottom:16px}
+.timeline li::before{
+  content:"";position:absolute;left:1px;top:7px;width:13px;height:13px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand);
+}
+.timeline time{font-size:var(--fs-xs);color:var(--accent);font-weight:700;letter-spacing:.04em}
+.timeline strong{display:block;font-size:var(--fs-s);color:var(--ink)}
+.timeline p{font-size:var(--fs-s);color:var(--ink-soft);margin:2px 0 0}
+
+/* 深度解析阅读区 */
+.reading{background:#fff;border:1px solid var(--line);border-radius:var(--radius-l);padding:var(--sp-4) var(--sp-4) var(--sp-3)}
+.reading h3{font-size:var(--fs-l);margin:var(--sp-4) 0 8px;color:var(--brand-deep);padding-left:11px;border-left:4px solid var(--accent)}
+.reading h3:first-of-type{margin-top:var(--sp-2)}
+.reading p{color:#2a3631}
+.pullquote{
+  border-left:4px solid var(--brand);background:var(--brand-soft);
+  padding:12px 16px;margin:var(--sp-3) 0;font-family:var(--serif);
+  font-size:var(--fs-l);color:var(--brand-deep);border-radius:0 var(--radius-m) var(--radius-m) 0;
+}
+.checktable{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:10px 0 var(--sp-3)}
+.checktable caption{text-align:left;font-size:var(--fs-xs);color:var(--muted);padding-bottom:6px}
+.checktable th,.checktable td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.checktable th{background:#f3f1e9;font-weight:600;color:var(--brand-deep)}
+.checktable td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;
+  background:#fdfcf8;border:1px solid var(--line);border-radius:var(--radius-m);padding:12px 14px;
+}
+.steps li::before{
+  content:counter(st);width:32px;height:32px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700;font-size:var(--fs-s);
+}
+.steps strong{display:block;font-size:var(--fs-s);color:var(--brand-deep)}
+.steps p{font-size:var(--fs-s);color:var(--ink-soft);margin:2px 0 0}
+
+/* 标签索引 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.tag-cloud a{
+  text-decoration:none;font-size:var(--fs-s);padding:6px 13px;border-radius:999px;
+  border:1px solid var(--line);background:#fdfcf8;color:var(--ink-soft);
+}
+.tag-cloud a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft)}
+
+/* FAQ */
+details{
+  border:1px solid var(--line);border-radius:var(--radius-m);background:#fdfcf8;
+  padding:0;margin-bottom:9px;overflow:hidden;
+}
+details[open]{background:#fff;box-shadow:var(--shadow-s)}
+summary{
+  cursor:pointer;padding:12px 15px;font-size:var(--fs-s);font-weight:600;color:var(--brand-deep);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--accent);font-weight:700;flex:0 0 auto}
+details[open] summary::after{content:"－"}
+details .faq-body{padding:0 15px 13px;font-size:var(--fs-s);color:var(--ink-soft)}
+details .faq-body p{margin-bottom:6px}
+
+/* 评论 */
+.comment-list{display:grid;gap:12px}
+.comment{border:1px solid var(--line);border-radius:var(--radius-m);padding:12px 15px;background:#fdfcf8}
+.comment header{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.comment header strong{font-size:var(--fs-s);color:var(--brand-deep)}
+.comment header time{font-size:var(--fs-xs);color:var(--muted)}
+.comment p{font-size:var(--fs-s);margin:0;color:var(--ink-soft)}
+.comment .ref{font-size:var(--fs-xs);color:var(--accent);margin-top:5px;display:block}
+.comment.neutral{border-left:3px solid #b9c4bd}
+.comment.crit{border-left:3px solid var(--warn)}
+
+/* 榜单 */
+.rank-list{list-style:none;counter-reset:rk;padding:0;margin:0}
+.rank-list li{
+  counter-increment:rk;display:grid;grid-template-columns:30px minmax(0,1fr) auto;
+  gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-s);
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{content:counter(rk);color:var(--accent);font-weight:700;font-family:var(--serif)}
+.rank-list .score{font-variant-numeric:tabular-nums;color:var(--muted);font-size:var(--fs-xs)}
+
+/* 引语卡 */
+.quote-card{
+  background:linear-gradient(150deg,#2f5d50,#1d3b33);color:#eef4f0;border-radius:var(--radius-m);
+  padding:18px 20px;font-size:var(--fs-s);
+}
+.quote-card p{font-family:var(--serif);font-size:var(--fs-l);line-height:1.65;margin-bottom:10px}
+.quote-card footer{font-size:var(--fs-xs);color:#b9cfc4}
+
+/* 页尾 */
+.site-foot{background:#1b2c27;color:#cfdcd5;font-size:var(--fs-s);margin-top:var(--sp-5)}
+.foot-inner{max-width:1180px;margin:0 auto;padding:var(--sp-5) 20px var(--sp-4);display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--sp-4)}
+.foot-brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;margin-bottom:10px}
+.foot-brand strong{font-size:var(--fs-l)}
+.foot-desc{color:#a9c3b5;font-size:var(--fs-s);line-height:1.7}
+.foot-inner h3{font-size:var(--fs-s);color:#ffd79a;margin-bottom:9px;letter-spacing:.06em}
+.foot-inner ul{list-style:none;padding:0;margin:0;font-size:var(--fs-s)}
+.foot-inner li{margin-bottom:6px}
+.foot-inner a{color:#cfdcd5;text-decoration:none}
+.foot-inner a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{border-top:1px solid #2c403a;color:#8fa79b;font-size:var(--fs-xs);text-align:center;padding:14px 20px}
+@media (max-width:820px){.foot-inner{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-inner{grid-template-columns:1fr}}
+
+/* 回顶 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand-deep);cursor:pointer;
+  font-size:18px;box-shadow:var(--shadow-m);opacity:0;pointer-events:none;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-2px)}
+@media (max-width:560px){.to-top{right:12px;bottom:14px;width:40px;height:40px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.channel-grid a:hover,.btn:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"安安老师在线观看",
+  "inLanguage":"zh-CN",
+  "description":"课程直播回放、录播课表与观看所索引页示例站点",
+  "dateModified":"2026-11-08"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"直播结束后多久能看到录播回放？","acceptedAnswer":{"@type":"Answer","text":"按示例排片，单场直播结束到回放上线通常为2至4小时。11月7日初三数学冲刺场21:10结束，回放22:52出现在课程页第二条。"}},
+    {"@type":"Question","name":"手机端观看需要额外安装应用吗？","acceptedAnswer":{"@type":"Answer","text":"网页端直接播放，画质自适应。需要下载讲义或开倍速（1.25倍、1.5倍）时，部分场次要求登录账号并绑定手机号。"}},
+    {"@type":"Question","name":"讲义PDF和课堂板书是同一份材料吗？","acceptedAnswer":{"@type":"Answer","text":"不是同一份。讲义是课前版本，标注了例题编号；课堂板书属于直播中补充，随回放附件单独发布，两者页数往往相差一倍以上。"}},
+    {"@type":"Question","name":"没有赶上直播时间还能补看吗？","acceptedAnswer":{"@type":"Answer","text":"可以。录播回看期限在课程页标注，模考讲评类为45天，日常同步课为18天，过期后仅保留标题与讲义下载。"}}
+  ]
+}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice">
+    <span><b>11月8日 08:40</b> 更新：本周六初三物理「电路故障分析」直播改至 19:30 开讲，回放次日 09:00 上线</span>
+    <a href="#latest">查看本周排片</a>
+  </div>
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="回到首页顶部">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="课程播放标志">
+          <rect width="64" height="64" rx="14" fill="#2f5d50"/>
+          <path d="M16 21h24v6H16zM16 33h18v6H16z" fill="#f4e6c8"/>
+          <circle cx="45" cy="40" r="10" fill="#e0a543"/>
+          <path d="M42 35.5v9l7.5-4.5z" fill="#2f5d50"/>
+        </svg>
+        <span class="brand-text"><strong>安安老师在线观看</strong><span>直播回放索引</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headNav">频道菜单</button>
+      <nav class="head-nav" id="headNav" aria-label="主题导航">
+        <a href="#channels">课程分类</a>
+        <a href="#picks">精选场次</a>
+        <a href="#latest">本周更新</a>
+        <a href="#reading">深度解析</a>
+        <a href="#guide">观看指南</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-wrap">
+          <input type="search" id="siteSearch" placeholder="搜课程、年级或日期" aria-label="站内搜索" autocomplete="off">
+          <div class="search-result" id="searchResult" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div>
+      <span class="hero-tag">2026 秋季学期 · 第 11 周排片</span>
+      <h1 id="heroTitle">安安老师在线观看</h1>
+      <p class="hero-lead">按年级、科目和场次追踪直播与回放。这里整理开讲时间、平台入口、回看期限和配套讲义版本，方便错过直播的学生在 24 小时内找到同一节课的第二遍。</p>
+      <div class="hero-stat">
+        <div><strong>9</strong><span>个在排频道</span></div>
+        <div><strong>42</strong><span>场本月已上线回放</span></div>
+        <div><strong>18—45</strong><span>天回看期限区间</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#latest">看本周排片</a>
+        <a class="btn btn-ghost" href="#picks">找精选场次</a>
+      </div>
+    </div>
+    <aside class="hero-art" aria-label="近期直播排片示意">
+      <span class="art-label">SCHEDULE · 11月8日—11月10日</span>
+      <ul class="art-list">
+        <li><span>初三物理 · 电路故障分析</span><span>11/8 19:30</span></li>
+        <li><span>高一数学 · 函数单调性</span><span>11/9 20:00</span></li>
+        <li><span>初三英语 · 完形填空精讲</span><span>11/10 19:00</span></li>
+      </ul>
+      <p class="art-note">回放上线时间以场次页为准；改期会在公告条与本周更新同步显示。</p>
+    </aside>
+  </section>
+
+  <div class="layout">
+    <div class="main-col" id="mainCol">
+
+      <!-- 领域概览 -->
+      <section class="panel" id="overview" aria-labelledby="overviewTitle">
+        <div class="panel-head">
+          <h2 id="overviewTitle">课程直播观看体系概览</h2>
+          <span class="kicker">WHAT / WHEN / HOW LONG</span>
+        </div>
+        <p>课程页面围绕三种形态运转：直播课、录播回放、讲义与板书附件。直播课按学期周次排，集中在周一至周五晚间 19:00—21:30，周末加开设卷讲评与模考复盘。回放的可用状态分四档：可播放、待上传、仅讲义、已过期。判断一节课是否还能看，先看课程页顶部的时间条，而不是看列表上的日期。</p>
+        <div class="compare" style="margin-top:14px">
+          <div class="compare-box good">
+            <h4>能完整补看的条件</h4>
+            <ul>
+              <li>回放已上传，且回看期限内</li>
+              <li>讲义版本与直播日期一致</li>
+              <li>登录账号，未在异地并发播放</li>
+            </ul>
+          </div>
+          <div class="compare-box bad">
+            <h4>常见误区</h4>
+            <ul>
+              <li>把公告里的开讲时间当作回放上线时间</li>
+              <li>用课表日期检索，忽略实际改期记录</li>
+              <li>只下载讲义，误以为讲义含板书内容</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 频道分类入口 -->
+      <section class="panel" id="channels" aria-labelledby="channelsTitle">
+        <div class="panel-head">
+          <h2 id="channelsTitle">按年级与科目找课程</h2>
+          <span class="kicker">9 个在排频道</span>
+        </div>
+        <div class="channel-grid">
+          <a href="/#latest"><strong>初三数学直播回放</strong><span>每周二、四 20:00</span></a>
+          <a href="/#latest"><strong>初三物理电路专题</strong><span>周六 19:30，本周改期</span></a>
+          <a href="/#latest"><strong>初三英语完形填空</strong><span>每周一 19:00</span></a>
+          <a href="/#latest"><strong>高一数学函数模块</strong><span>每周一、三 20:00</span></a>
+          <a href="/#latest"><strong>高一物理受力分析</strong><span>每周四 19:30</span></a>
+          <a href="/#latest"><strong>高二化学实验题</strong><span>每周二 19:30</span></a>
+          <a href="/#latest"><strong>初高中英语作文批改</strong><span>隔周五 20:30</span></a>
+          <a href="/#latest"><strong>期中模考逐题复盘</strong><span>周末专场，按模考时间排</span></a>
+          <a href="/#latest"><strong>期末冲刺答疑专场</strong><span>12 月起开放预约</span></a>
+        </div>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="panel" id="picks" aria-labelledby="picksTitle">
+        <div class="panel-head">
+          <h2 id="picksTitle">精选场次：适合先补哪三节</h2>
+          <span class="kicker">编辑挑选，非热度排序</span>
+        </div>
+        <div class="pick-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/an-an-math-circuit/560/320" width="560" height="320" loading="lazy" alt="初中数学课堂黑板上的二次函数图像与例题编号">
+            <div class="card-body">
+              <h3>初三数学：二次函数最值六类题型</h3>
+              <p>10月29日场次，讲了顶点式、区间最值与含参讨论。回放 2 小时 14 分，例题从 Z1 排到 Z6。</p>
+              <div class="meta-row"><span>10月29日 20:00</span><a class="chip" href="/#reading">回看期限 18 天</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/an-an-physics-lab/560/320" width="560" height="320" loading="lazy" alt="物理实验中电压表与滑动变阻器连线示意">
+            <div class="card-body">
+              <h3>初三物理：伏安法测电阻误差来源</h3>
+              <p>11月2日场次，重点讲了电流表外接与内接的选择。课件第 9 页附了四种接线对照表。</p>
+              <div class="meta-row"><span>11月2日 19:30</span><a class="chip" href="/#guide">回看期限 18 天</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/an-an-english-essay/560/320" width="560" height="320" loading="lazy" alt="英语作文批改页上的红色修改标记与句型标注">
+            <div class="card-body">
+              <h3>英语作文批改公开课：从 12 分到 18 分</h3>
+              <p>11月5日场次，现场改了 5 篇学生习作，逐句说明扣分点。回放含批改稿 PDF。</p>
+              <div class="meta-row"><span>11月5日 20:30</span><a class="chip" href="/#comments">回看期限 45 天</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="panel" id="latest" aria-labelledby="latestTitle">
+        <div class="panel-head">
+          <h2 id="latestTitle">本周更新与改期记录</h2>
+          <span class="kicker">覆盖 11月2日—11月8日</span>
+        </div>
+        <ul class="tight-list">
+          <li>
+            <span class="date">11月8日</span>
+            <a href="/#channels">初三物理「电路故障分析」改至 19:30 开讲</a>
+            <span class="note">回放次日 09:00</span>
+            <em>原定 20:00，因与学校家长会时间冲突调整；讲义页码不变，仍为 P1—P14。</em>
+          </li>
+          <li>
+            <span class="date">11月7日</span>
+            <a href="/#picks">初三数学冲刺场回放上线</a>
+            <span class="note">时长 1:52</span>
+            <em>直播 21:10 结束，22:52 出现在课程页第二条，板书附件同步更新到第 3 版。</em>
+          </li>
+          <li>
+            <span class="date">11月6日</span>
+            <a href="/#reading">高一数学函数单调性例题补录</a>
+            <span class="note">补录片段 17 分钟</span>
+            <em>补录内容为直播中跳过的区间端点讨论，编号接在例 8 之后。</em>
+          </li>
+          <li>
+            <span class="date">11月4日</span>
+            <a href="/#faq">录播回看期限说明调整</a>
+            <span class="note">模考类改为 45 天</span>
+            <em>此前模考讲评为 30 天；11月4日之后上线的场次按新规执行，之前的场次不变。</em>
+          </li>
+          <li>
+            <span class="date">11月3日</span>
+            <a href="/#guide">手机端倍速播放上线 1.5 倍档</a>
+            <span class="note">需登录</span>
+            <em>1.25 倍档继续保留；未登录仍可原速播放，下载讲义不受影响。</em>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 深度解析（唯一主体阅读区） -->
+      <section class="panel" id="reading" aria-labelledby="readingTitle">
+        <div class="panel-head">
+          <h2 id="readingTitle">深度解析：回放补看的效果被高估了</h2>
+          <span class="kicker">观点 · 可核对 · 可反驳</span>
+        </div>
+        <div class="reading">
+          <p>补看录播常被当作等同于到场听课的方案。三门科目、六周排片记录显示，这个等号在多数情况下不成立：回放能还原讲授，却难以还原课堂中临时插入的停顿、追问和第 40 分钟后的现场练习。下面把判断拆成可核对的三块。</p>
+
+          <h3>一、时间差：回放上线与遗忘曲线的错位</h3>
+          <p>以 10月15日至11月7日的 12 场晚间直播为样本，回放从直播结束到可播放的平均间隔为 3 小时 12 分，最早的一场是 1 小时 41 分（10月22日高一数学），最晚的一场 5 小时 08 分（10月27日高三化学，当天平台维护）。学生当日晚间能看到回放的场次为 7 场，占 58%。其余 5 场要到次日中午前后才能看。</p>
+          <p>这个差距本身不致命，问题在于当晚作业与次日新课之间的空档。11月2日初三物理讲到电表内接外接，作业第二天早自习要交。回放次日 00:40 才上线，当天能补救的时间窗不足 6 小时。回看数据里也能看到对应现象：11月3日 07:00—08:00 是该场回放的单日播放峰值，占该场总播放的 23.6%，说明相当一部分人是赶在早自习前才补。</p>
+
+          <h3>二、比数据更硬的是场内信息丢失</h3>
+          <p>把 11月5日英语作文批改场次的回放与现场记录对照，能列出具体的丢失项。直播中改了一篇 12 分作文，从 19:42 到 20:03 共 21 分钟，期间学生两次口头追问「为什么这里用被动」，这部分在回放里保留。丢失的是更细的东西：投屏切换时那 9 秒的黑屏、老师随口说的「这个句型下次模考还会考」以及现场举手表决哪一句更好，共三处。三处都不构成知识点缺失，但都影响理解节奏。</p>
+          <table class="checktable">
+            <caption>11月5日英语作文批改场：回放与现场记录对照</caption>
+            <thead><tr><th scope="col">项目</th><th scope="col">现场</th><th scope="col">回放</th><th scope="col">差异</th></tr></thead>
+            <tbody>
+              <tr><td>总时长</td><td class="num">97 分钟</td><td class="num">94 分钟</td><td>投屏黑屏与调试被剪</td></tr>
+              <tr><td>批改篇数</td><td class="num">5 篇</td><td class="num">5 篇</td><td>无</td></tr>
+              <tr><td>口头追问</td><td class="num">7 次</td><td class="num">5 次</td><td>2 次收音不全</td></tr>
+              <tr><td>板书附件</td><td>投影 4 页</td><td>PDF 3 页</td><td>第 4 页手写未录</td></tr>
+            </tbody>
+          </table>
+          <p>可以反驳的地方在于：丢失项都不是考点本身。如果只看知识覆盖，回放确实够用；如果看的是「这节课当时如何推进」，回放是删节版。两种需求不能混着谈。</p>
+
+          <h3>三、规则前后变化：期限延长并没有提高完成率</h3>
+          <p>录播回看期限在 11月4日做过一次调整，模考讲评从 30 天延长到 45 天，日常同步课维持 18 天。按常理，期限延长应提高看完比例。取 10月6日与 10月20日两场模考讲评（旧规 30 天）和 11月4日之后的排片预估对照，前三场中完整看完（播放进度超过 90%）的比例分别为 31%、27%、34%，而日常同步课 18 天期限的同类比例为 39%。期限更长的一组反而更低。</p>
+          <p>这组数字能说明的有限：样本小，且模考讲评本身时长更长（平均 128 分钟，日常课 96 分钟）。但至少一个常见推断站不住——「期限短所以看不完」。11月4日之后新规执行情况要到 12 月上旬才有第一轮完整数据，届时再验证更稳妥。</p>
+          <div class="pullquote">回放真正的问题不是画质或期限，而是它把「当时听懂了」和「之后回看」两种状态压成同一段视频，观看者很难分清自己处在哪一层。</div>
+          <p>对学生更可操作的做法是：直播当晚先看回放的前 15 分钟，确认讲授顺序是否与课堂一致；不一致就以讲义为准，跳过回放。这条规则在 10月29日数学场次里验证过一次，前 15 分钟与讲义第 1—3 页完全对应，中途才出现偏差。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="panel" id="guide" aria-labelledby="guideTitle">
+        <div class="panel-head">
+          <h2 id="guideTitle">观看体验指南：从开播到复盘</h2>
+          <span class="kicker">五步流程</span>
+        </div>
+        <ol class="steps">
+          <li>
+            <div><strong>开播前 10 分钟确认场次状态</strong>
+            <p>课程页顶部时间条显示「即将开始」才能进直播间。「待上传」表示回放尚未生成，进去也只有讲义下载。</p></div>
+          </li>
+          <li>
+            <div><strong>准备讲义对应页码</strong>
+            <p>11月8日物理场讲义共 14 页，直播从中段第 7 页切入。提前翻到该页，避免听到一半找页码。</p></div>
+          </li>
+          <li>
+            <div><strong>直播中标记疑问时间点</strong>
+            <p>回放播放器支持按时间段定位，记下「20:14 电表内接」这类备注，比记文字更准。</p></div>
+          </li>
+          <li>
+            <div><strong>次日先看板书附件再看回放</strong>
+            <p>板书 PDF 通常只有 3—4 页，含手写修改；回放含讲授节奏。先看附件能缩短回看时间约三成。</p></div>
+          </li>
+          <li>
+            <div><strong>按回看期限安排复盘</strong>
+            <p>日常同步课 18 天、模考讲评 45 天。到期后仅保留标题与讲义，回放按钮变灰并标注「已过期」。</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="panel" id="faq" aria-labelledby="faqTitle">
+        <div class="panel-head">
+          <h2 id="faqTitle">常见问题</h2>
+          <span class="kicker">按场次与设备整理</span>
+        </div>
+        <details>
+          <summary>直播结束后多久能看到录播回放？</summary>
+          <div class="faq-body">
+            <p>按近期排片，单场直播结束到回放上线通常为 2 至 4 小时。11月7日初三数学冲刺场 21:10 结束，22:52 出现在课程页第二条；10月27日高三化学场因平台维护，次日 01:08 才上线。</p>
+          </div>
+        </details>
+        <details>
+          <summary>手机端观看需要额外安装应用吗？</summary>
+          <div class="faq-body">
+            <p>网页端直接播放，画质自适应。需要下载讲义或开启 1.25 倍、1.5 倍速时，部分场次要求登录账号并绑定手机号。11月3日起手机端倍速档新增 1.5 倍，未登录仍可原速播放。</p>
+          </div>
+        </details>
+        <details>
+          <summary>讲义 PDF 和课堂板书是同一份材料吗？</summary>
+          <div class="faq-body">
+            <p>不是同一份。讲义是课前版本，标注例题编号，例如初三数学 Z1—Z6；课堂板书属于直播中补充，随回放附件单独发布。两者页数经常相差一倍以上，11月5日英语场讲义 11 页，板书附件只有 3 页。</p>
+          </div>
+        </details>
+        <details>
+          <summary>没有赶上直播时间还能补看吗？</summary>
+          <div class="faq-body">
+            <p>可以。录播回看期限在课程页标注：日常同步课 18 天，模考讲评类自 11月4日起为 45 天。过期后标题与讲义下载仍保留，回放按钮显示「已过期」。</p>
+          </div>
+        </details>
+        <details>
+          <summary>改期场次的讲义需要重新下载吗？</summary>
+          <div class="faq-body">
+            <p>看改期公告怎么说。11月8日物理场只改开讲时间，讲义页码 1—14 不变，无需重下；10月20日高一数学场曾因内容调整更换讲义，版本号从 v2 变 v3，那种情况必须重下。</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="panel" id="comments" aria-labelledby="commentsTitle">
+        <div class="panel-head">
+          <h2 id="commentsTitle">学生与家长的观看反馈</h2>
+          <span class="kicker">含中性评价与质疑</span>
+        </div>
+        <div class="comment-list">
+          <article class="comment">
+            <header><strong>晚自习后补课</strong><time datetime="2026-11-08">11月8日 07:42</time></header>
+            <p>昨晚物理改到 19:30 正好赶上了。电路故障那题从 19:58 开始拆，三段假设逐条排除，比我课本上的写法清楚。</p>
+            <span class="ref">指向：11月8日初三物理电路故障分析</span>
+          </article>
+          <article class="comment crit">
+            <header><strong>橙子不酸</strong><time datetime="2026-11-07">11月7日 23:15</time></header>
+            <p>回放上线是快，但 11月5日英语批改场回放第 47 分钟开始有回音，持续了将近两分钟，戴耳机听得难受。附件里的批改稿 PDF 倒没问题。</p>
+            <span class="ref">指向：英语作文批改公开课回放</span>
+          </article>
+          <article class="comment neutral">
+            <header><strong>高二家长老周</strong><time datetime="2026-11-06">11月6日 21:30</time></header>
+            <p>函数单调性那节补录片段加了区间端点讨论，但编号接得有点跳，例 8 之后直接跳到例 8-附，孩子中间找我确认过一次顺序。</p>
+            <span class="ref">指向：高一数学函数单调性补录</span>
+          </article>
+          <article class="comment">
+            <header><strong>刷题到十点</strong><time datetime="2026-11-05">11月5日 22:08</time></header>
+            <p>作文批改公开课值回时间，五篇习作里第三篇和我上次写的结构几乎一样，扣分点「衔接词单一」被点了三次。回放暂停后能对照自己的稿子改。</p>
+            <span class="ref">指向：11月5日英语作文批改公开课</span>
+          </article>
+          <article class="comment crit">
+            <header><strong>不想再等回放</strong><time datetime="2026-11-04">11月4日 09:20</time></header>
+            <p>模考讲评改到 45 天期限，说实话没感觉更好。10月20日那场讲评我到现在还剩 40 分钟没看，时长 132 分钟，一次根本看不完。</p>
+            <span class="ref">指向：11月4日回看期限调整</span>
+          </article>
+          <article class="comment neutral">
+            <header><strong>物理课代表</strong><time datetime="2026-11-03">11月3日 13:05</time></header>
+            <p>手机端 1.5 倍速上线后试了一下，讲实验步骤的部分合适，讲推导的部分还是 1.25 倍听着舒服。希望倍速能记住上次选择。</p>
+            <span class="ref">指向：11月3日倍速播放更新</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="panel" id="news" aria-labelledby="newsTitle">
+        <div class="panel-head">
+          <h2 id="newsTitle">相关资讯</h2>
+          <span class="kicker">排片、规则与材料</span>
+        </div>
+        <ul class="tight-list">
+          <li>
+            <span class="date">11月8日</span>
+            <a href="/#latest">本周六物理场改期至 19:30</a>
+            <span class="note">讲义不变</span>
+            <em>原定 20:00，改期公告发布在 08:40，公告条与本周更新同步显示。</em>
+          </li>
+          <li>
+            <span class="date">11月6日</span>
+            <a href="/#reading">高一数学补录片段上线，接例 8 之后</a>
+            <span class="note">17 分钟</span>
+            <em>补录为直播中跳过的区间端点讨论，单独成段，章节标记为 8-附。</em>
+          </li>
+          <li>
+            <span class="date">11月4日</span>
+            <a href="/#faq">模考讲评回看期由 30 天改为 45 天</a>
+            <span class="note">新老划断</span>
+            <em>11月4日之后上线的场次按新规，之前上线的维持原期限，课程页标注不变。</em>
+          </li>
+          <li>
+            <span class="date">11月3日</span>
+            <a href="/#guide">手机端新增 1.5 倍速播放档</a>
+            <span class="note">需登录</span>
+            <em>1.25 倍保留，未登录状态仍可原速播放，画质自适应逻辑不变。</em>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐标签 -->
+      <section class="panel" id="related" aria-labelledby="relatedTitle">
+        <div class="panel-head">
+          <h2 id="relatedTitle">相关推荐</h2>
+          <span class="kicker">按检索习惯整理</span>
+        </div>
+        <div class="tag-cloud">
+          <a href="/#picks">安安老师初三数学直播回放</a>
+          <a href="/#picks">安安老师物理电路专题课</a>
+          <a href="/#channels">高一数学函数单调性讲解</a>
+          <a href="/#guide">英语作文批改公开课回放</a>
+          <a href="/#faq">录播回看期限怎么算</a>
+          <a href="/#guide">课堂板书 PDF 下载</a>
+          <a href="/#latest">本周课程改期通知</a>
+          <a href="/#reading">模考讲评逐题复盘</a>
+          <a href="/#comments">手机端倍速播放体验</a>
+        </div>
+      </section>
+
+      <!-- 补充板块：榜单 -->
+      <section class="panel" id="ranking" aria-labelledby="rankingTitle">
+        <div class="panel-head">
+          <h2 id="rankingTitle">近两周回看完成度榜单</h2>
+          <span class="kicker">按播放进度超 90% 的场次比例排序</span>
+        </div>
+        <ol class="rank-list">
+          <li><a href="/#picks">英语作文批改公开课（11月5日）</a><span class="score">完成度 46% · 94 分钟</span></li>
+          <li><a href="/#picks">初三数学二次函数最值（10月29日）</a><span class="score">完成度 39% · 134 分钟</span></li>
+          <li><a href="/#channels">初三物理伏安法测电阻（11月2日）</a><span class="score">完成度 37% · 112 分钟</span></li>
+          <li><a href="/#channels">高一数学函数单调性（10月22日）</a><span class="score">完成度 34% · 96 分钟</span></li>
+          <li><a href="/#channels">高二化学实验题（10月27日）</a><span class="score">完成度 21% · 128 分钟</span></li>
+        </ol>
+        <p class="meta-row"><span class="chip warm">口径说明</span>完成度按播放进度统计，拖动进度条与切集不计入；样本为各场次上线后 72 小时内的播放记录。</p>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="辅助导航与信息">
+      <nav class="side-panel side-nav" id="sideNav" aria-label="页内导航">
+        <h3>页内导航</h3>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li><a href="/#overview">课程观看体系</a></li>
+          <li><a href="/#channels">年级与科目频道</a></li>
+          <li><a href="/#picks">精选场次</a></li>
+          <li><a href="/#latest">本周更新</a></li>
+          <li><a href="/#reading">深度解析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观看反馈</a></li>
+          <li><a href="/#ranking">完成度榜单</a></li>
+        </ul>
+      </nav>
+      <div class="side-panel">
+        <h3>本周关键时间</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:14px;color:var(--ink-soft)">
+          <li style="padding:6px 0;border-bottom:1px dashed var(--line)">11/8 19:30 初三物理直播</li>
+          <li style="padding:6px 0;border-bottom:1px dashed var(--line)">11/9 09:00 该场回放上线</li>
+          <li style="padding:6px 0;border-bottom:1px dashed var(--line)">11/9 20:00 高一数学直播</li>
+          <li style="padding:6px 0">11/10 19:00 初三英语直播</li>
+        </ul>
+      </div>
+      <div class="quote-card">
+        <p>「讲义先看完，回放只看第 15 分钟之后，一周能省出两节晚自习。」</p>
+        <footer>—— 11月6日 高一数学场复盘笔记</footer>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <a class="foot-brand" href="/#top">
+        <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="站点标志">
+          <rect width="64" height="64" rx="14" fill="#3a6d5f"/>
+          <path d="M16 21h24v6H16zM16 33h18v6H16z" fill="#f4e6c8"/>
+          <circle cx="45" cy="40" r="10" fill="#e0a543"/>
+          <path d="M42 35.5v9l7.5-4.5z" fill="#3a6d5f"/>
+        </svg>
+        <strong>安安老师在线观看</strong>
+      </a>
+      <p class="foot-desc">课程场次、回放状态、讲义版本各自记录，方便对照时间决定先补哪一节。</p>
+    </div>
+    <div>
+      <h3>课程频道</h3>
+      <ul>
+        <li><a href="/#channels">初三数学回放</a></li>
+        <li><a href="/#channels">初三物理电路</a></li>
+        <li><a href="/#channels">高一数学函数</a></li>
+        <li><a href="/#channels">高二化学实验</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>使用帮助</h3>
+      <ul>
+        <li><a href="/#guide">观看流程</a></li>
+        <li><a href="/#faq">回看期限</a></li>
+        <li><a href="/#faq">讲义与板书</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>说明</h3>
+      <ul>
+        <li>课程时间、回放状态与完成度数据均为示例条目，用于演示页面结构。</li>
+        <li>页面更新时间：2026-11-08 08:40，对应公告条与本周更新的改期记录。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">© 2026 安安老师在线观看 · 示例内容页 · 页面信息以场次页实际标注为准</div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var searchInput = document.getElementById('siteSearch');
+  var resultBox = document.getElementById('searchResult');
+  var main = document.getElementById('mainCol') || document.body;
+
+  // 建立索引：标题与段落文本
+  var index = [];
+  main.querySelectorAll('section[id]').forEach(function(sec){
+    var label = sec.querySelector('h2');
+    var texts = [];
+    sec.querySelectorAll('h3, a, summary, li, p').forEach(function(el){
+      var t = (el.textContent||'').replace(/\s+/g,' ').trim();
+      if(t) texts.push(t);
+    });
+    index.push({
+      id: sec.id,
+      title: label ? label.textContent.trim() : sec.id,
+      text: texts.join(' ')
+    });
+  });
+
+  function render(q){
+    var key = q.trim().toLowerCase();
+    if(!key){ resultBox.classList.remove('on'); resultBox.innerHTML=''; return; }
+    var hits = index.filter(function(item){
+      return item.title.toLowerCase().indexOf(key) > -1 || item.text.toLowerCase().indexOf(key) > -1;
+    }).slice(0,6);
+    if(!hits.length){
+      resultBox.innerHTML = '<div class="empty">没有找到与「'+ q.replace(/[<>&"]/g,'') +'」匹配的课程，试试「数学」「回放」「11月8日」。</div>';
+    } else {
+      resultBox.innerHTML = hits.map(function(h){
+        return '<a href="/#'+h.id+'">'+h.title+'</a>';
+      }).join('');
+    }
+    resultBox.classList.add('on');
+  }
+
+  searchInput.addEventListener('input', function(){ render(searchInput.value); });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ resultBox.classList.remove('on'); }
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      var first = resultBox.querySelector('a');
+      if(first){ location.hash = first.getAttribute('href').replace('/#','#'); resultBox.classList.remove('on'); }
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-wrap')) resultBox.classList.remove('on');
+  });
+
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var headNav = document.getElementById('headNav');
+  menuBtn.addEventListener('click', function(){
+    var open = headNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  headNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 900){
+      headNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // 回顶
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  if('IntersectionObserver' in window && sections.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(l){
+            l.classList.toggle('active', l.getAttribute('href').replace('/#','') === en.target.id);
+          });
+        }
+      });
+    }, {rootMargin:'-100px 0px -65% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>
